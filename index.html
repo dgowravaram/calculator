@@ -1,37 +1,59 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width-device-width, initial-scale-1.0">
-    <title>Calculator</title>
-    <link href="style.css" rel="stylesheet">
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <div class="calculator-grid">
-      <div class="output">
-        <div class="previous-operand"></div>
-        <div class="current-operand"></div>
-      </div>
-      <button class="span-two">AC</button>
-      <button>DEL</button>
-      <button>÷</button>
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>*</button>
-      <button>4</button>
-      <button>5</button>
-      <button>6</button>
-      <button>+</button>
-      <button>7</button>
-      <button>8</button>
-      <button>9</button>
-      <button>-</button>
-      <button>.</button>
-      <button>0</button>
-      <button class="span-two">=</button>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tip Right</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💸</text></svg>">
+</head>
+<body>
+  <div class="calculator-grid">
+    <div class="tipOutput">
+     <h1 class="tip">$0</h1>
+   </div>
+
+
+
+
+      <div class="price">Price ($)</div>
+      <input type="number" min="0" class="cost" placeholder="$"></input>
+
+      <!-- id="cost" -->
+
+
+
+      <div class="tipIn">tip (%)</div>
+      <input type="number" min="0" class="service" placeholder="%"></input>
+
+
+
+      <div class="ppl">people (#)</div>
+      <input type="number" min="0" class="people" placeholder="#"></input>
+
+
+        <button id="tip-btn" class="tip-btn">Calculate</button>
+
+
+
+
+
+    <!--<button id='reset' class="reset">Reset</button>-->
+
+
+
+
+
+
+
+
+
+
+
+
+      <script type="text/javascript" src="app.js"></script>
 
     </div>
-  </body>
+</body>
 </html>
